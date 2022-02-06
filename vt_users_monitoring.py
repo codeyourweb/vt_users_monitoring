@@ -86,7 +86,7 @@ def filter_vt_user_comments(user, comments, filters, output_regex):
 
 def main():
     # config file parsing
-    config = read_yaml_configuration('./users_monitoring.yaml')
+    config = read_yaml_configuration('./vt_users_monitoring.yaml')
     if config is None or len(config) == 0:
         print("Error parsing configuration file")
         exit(1)
