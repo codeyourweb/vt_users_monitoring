@@ -1,0 +1,18 @@
+users_monitoring:
+    vt_api_key: '<VT API KEY>'
+    listener:
+      - user: 'CYBERCOM_Malware_Alert'
+        filters: []
+        output_comment_regex: '(#[\w ]+)+'
+      - user: 'thor'
+        filters: []
+        output_comment_regex: 'RULE: \w+'
+      - user: 'HybridAnalysis'
+        filters: []
+        output_comment_regex: 'falcon-threatscore:\d+/\d+'
+      - user: 'intezervt'
+        filters: []
+        output_comment_regex: '(#[\w ]+)+'
+      - user: 'jameswt'
+        filters: []
+        output_comment_regex: '((#[\w ]+)+)|(https:\/\/twitter.com\/.+)'
